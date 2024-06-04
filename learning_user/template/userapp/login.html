@@ -1,0 +1,16 @@
+{% extends 'userapp/base.html' %}
+{% block content %}
+<div class="jumbotron">
+    <h1>Please Login!</h1>
+    <form method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter Username">
+        <p></p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" name="submit" >
+        {% csrf_token %}
+    </form>
+</div>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+{% endblock %}
